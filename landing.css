@@ -1,0 +1,152 @@
+@font-face {
+    font-family: japanese;
+    src: url(Noto_Sans_JP/NotoSansJP-Medium.otf);
+}
+@font-face {
+    font-family: english;
+    src: url(Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+.title {
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-family: japanese;
+}
+.main {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.main a {
+    color: black;
+    text-decoration: none;
+}
+.subtitle {
+    position: absolute;
+    font-family: english;
+    font-size: 20px;
+    transform: rotate(90deg);
+    right: 2.5%;
+    top: 10%;
+}
+
+#container {
+    font-family: japanese;
+    width: 90%;
+    text-align: right;
+    font-size: 22px;
+    position: absolute;
+    bottom: 80px;
+}
+
+#container a {
+    display: block;
+    float: left;
+    width: 20%;
+    font-family: japanese;
+    color: black;
+    text-decoration: none;
+}
+
+
+.images {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+#container a {
+    text-decoration: none;
+}
+
+a.button:visited {
+    color: black;
+}
+
+.spring {
+    width: 240px;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    left: 4em;
+    animation: slide-in 2s forwards;
+}
+
+.spring:hover {
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 6px;
+    transition: all .5s;
+}
+
+.summer {
+    width: 240px;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    left: 23em;
+    animation: slide-in 2s forwards;
+}
+
+.summer:hover {
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 6px;
+    transition: all .5s;
+}
+
+.fall {
+    width: 240px;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    left: 42em;
+    animation: slide-in 2s forwards;
+}
+
+.fall:hover {
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 6px;
+    transition: all .5s;
+}
+
+.winter {
+    width: 240px;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    left: 61em;
+    animation: slide-in 2s forwards;
+}
+
+.winter:hover {
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 2px;
+    transition: all .5s;
+}
+
+@keyframes slide-in {
+    from {
+        margin-left: 5%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+

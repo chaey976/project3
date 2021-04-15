@@ -1,0 +1,65 @@
+@font-face {
+  font-family: japanese;
+  src: url(../Noto_Sans_JP/NotoSansJP-Medium.otf);
+}
+@font-face {
+  font-family: english;
+  src: url(../Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+.title {
+    writing-mode: vertical-rl;
+    font-family: japanese;
+}
+.main {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.main a {
+  color: black;
+  text-decoration: none;
+}
+.subtitle {
+    position: absolute;
+    font-family: english;
+    font-size: 20px;
+    transform: rotate(90deg);
+    right: 2.5%;
+    top: 10%;
+}
+.jpseason {
+  font-family: japanese;
+  position: absolute;
+  font-size: 30px;
+  right: 3.8%;
+  top: 30%;
+}
+.image-container {
+    position: relative;
+    left: 60px;
+    top: -50px;
+    width: 68vw;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: 200px;
+    grid-row-gap: 1em;
+    border: 6px solid white;
+    background-size: cover;
+}
+
+.popup {
+    position: sticky;
+    background-color: rgba(120, 120, 120, 0.5);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    width: 100vw;
+    height: 110vh;
+    left: 0%;
+    border: none;
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
